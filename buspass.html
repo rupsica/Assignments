@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TSRTC General Bus Pass Application</title>
+</head>
+<body>
+    <h1>TSRTC <img src="C:\Users\galin\Downloads\tsrtc logo.png" width="120" alt="TSRTC Logo"><br></h1>
+    <h2>TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+    <h3>GENERAL BUS PASS APPLICATION</h3>
+
+    <form>
+
+        <h4>Applicant Details</h4>
+        Name:<br>
+        <input type="text" name="name" required><br><br>
+
+        Father's/Guardian's Name:<br>
+        <input type="text" name="father_name" required><br><br>
+
+        Date of Birth (dd-mm-yyyy):<br>
+        <input type="date" name="dob" required><br><br>
+
+        Gender:<br>
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Male"> Male<br><br>
+
+        Age as on:<br>
+        <input type="number" name="age_years" placeholder="Year(s)"> Year(s)
+        <input type="number" name="age_months" placeholder="Month(s)"> Month(s)
+        <input type="number" name="age_days" placeholder="Day(s)"> Day(s)<br><br>
+
+        Aadhaar No:<br>
+        <input type="text" name="aadhaar" required><br><br>
+
+        WhatsApp No:<br>
+        <input type="tel" name="whatsapp" required><br><br>
+
+        E-mail ID:<br>
+        <input type="email" name="email" required><br><br>
+
+        Photo:<br>
+        <input type="file" name="photo" accept="image/*" required><br><br>
+
+        <h4>Residential Address Details</h4>
+        Applicant's Address:<br>
+        <textarea name="address" rows="4" cols="40"></textarea><br><br>
+
+        District:<br>
+        <select name="district">
+            <option>-----select district----</option>
+        </select><br><br>
+
+        Mandal:<br>
+        <select name="mandal">
+            <option>-----select mandal----</option>
+        </select><br><br>
+
+        Village:<br>
+        <select name="village">
+            <option>-----select village----</option>
+        </select><br><br>
+
+        Pincode:<br>
+        <input type="text" name="pincode"><br><br>
+
+        <h4>Pass Type Details</h4>
+        City:<br>
+        <select name="city">
+            <option>-----select city----</option>
+        </select><br><br>
+
+        Pass Type:<br>
+        <select name="pass_type">
+            <option>-----select bus pass type----</option>
+        </select><br><br>
+
+        <h4>Mode of Payment & Pass Collection</h4>
+        Payment Mode:<br>
+        <select name="payment_mode">
+            <option>-----select payment mode----</option>
+        </select><br><br>
+
+        Pass Delivery Mode:<br>
+        <select name="delivery_mode">
+            <option>-----select delivery mode----</option>
+        </select><br><br>
+
+        Center at which you want to collect pass:<br>
+        <select name="collection_center">
+            <option>-----select collection center----</option>
+        </select><br><br>
+
+        <h4>Captcha</h4>
+        Enter captcha shown above:<br>
+        <input type="text" name="captcha" required><br><br>
+
+        <input type="submit" value="Submit Application">
+
+    </form>
+</body>
+</html>
