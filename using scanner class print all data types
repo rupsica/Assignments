@@ -1,0 +1,62 @@
+package com.loop;
+import java.util.Scanner;
+public class Usingscannerclassdatatypes {
+	
+
+
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        // byte
+	        System.out.print("Enter a byte value: ");
+	        byte b = sc.nextByte();
+
+	        // short
+	        System.out.print("Enter a short value: ");
+	        short s = sc.nextShort();
+
+	        // int
+	        System.out.print("Enter an int value: ");
+	        int i = sc.nextInt();
+
+	        // long
+	        System.out.print("Enter a long value: ");
+	        long l = sc.nextLong();
+
+	        // float
+	        System.out.print("Enter a float value: ");
+	        float f = sc.nextFloat();
+
+	        // double
+	        System.out.print("Enter a double value: ");
+	        double d = sc.nextDouble();
+
+	        // char
+	        System.out.print("Enter a character: ");
+	        char c = sc.next().charAt(0);
+
+	        // boolean
+	        System.out.print("Enter a boolean value (true/false): ");
+	        boolean bool = sc.nextBoolean();
+
+	        // String
+	        sc.nextLine(); // consume leftover newline
+	        System.out.print("Enter a string: ");
+	        String str = sc.nextLine();
+
+	        // Printing all values
+	        System.out.println("\n--- Entered Values ---");
+	        System.out.println("Byte value: " + b);
+	        System.out.println("Short value: " + s);
+	        System.out.println("Int value: " + i);
+	        System.out.println("Long value: " + l);
+	        System.out.println("Float value: " + f);
+	        System.out.println("Double value: " + d);
+	        System.out.println("Character value: " + c);
+	        System.out.println("Boolean value: " + bool);
+	        System.out.println("String value: " + str);
+
+	        sc.close();
+	    }
+	}
+
