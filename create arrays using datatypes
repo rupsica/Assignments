@@ -1,0 +1,125 @@
+package com.loop;
+import java.util.Scanner;
+
+
+public class Createarraysusingdatatypes {
+	
+
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        // Size of arrays
+	        System.out.print("Enter the size of arrays: ");
+	        int size = sc.nextInt();
+
+	        // Creating arrays for all primitive data types + String
+	        byte[] byteArr = new byte[size];
+	        short[] shortArr = new short[size];
+	        int[] intArr = new int[size];
+	        long[] longArr = new long[size];
+	        float[] floatArr = new float[size];
+	        double[] doubleArr = new double[size];
+	        char[] charArr = new char[size];
+	        boolean[] boolArr = new boolean[size];
+	        String[] stringArr = new String[size];
+
+	        // Input for byte array
+	        System.out.println("\nEnter " + size + " byte values:");
+	        for (int i = 0; i < size; i++) {
+	            byteArr[i] = sc.nextByte();
+	        }
+
+	        // Input for short array
+	        System.out.println("\nEnter " + size + " short values:");
+	        for (int i = 0; i < size; i++) {
+	            shortArr[i] = sc.nextShort();
+	        }
+
+	        // Input for int array
+	        System.out.println("\nEnter " + size + " int values:");
+	        for (int i = 0; i < size; i++) {
+	            intArr[i] = sc.nextInt();
+	        }
+
+	        // Input for long array
+	        System.out.println("\nEnter " + size + " long values:");
+	        for (int i = 0; i < size; i++) {
+	            longArr[i] = sc.nextLong();
+	        }
+
+	        // Input for float array
+	        System.out.println("\nEnter " + size + " float values:");
+	        for (int i = 0; i < size; i++) {
+	            floatArr[i] = sc.nextFloat();
+	        }
+
+	        // Input for double array
+	        System.out.println("\nEnter " + size + " double values:");
+	        for (int i = 0; i < size; i++) {
+	            doubleArr[i] = sc.nextDouble();
+	        }
+
+	        // Input for char array
+	        System.out.println("\nEnter " + size + " characters:");
+	        for (int i = 0; i < size; i++) {
+	            charArr[i] = sc.next().charAt(0);
+	        }
+
+	        // Input for boolean array
+	        System.out.println("\nEnter " + size + " boolean values (true/false):");
+	        for (int i = 0; i < size; i++) {
+	            boolArr[i] = sc.nextBoolean();
+	        }
+
+	        // Input for String array
+	        sc.nextLine(); // clear buffer
+	        System.out.println("\nEnter " + size + " strings:");
+	        for (int i = 0; i < size; i++) {
+	            stringArr[i] = sc.nextLine();
+	        }
+
+	        // Printing all arrays
+	        System.out.println("\n--- Arrays Data ---");
+
+	        System.out.print("Byte array: ");
+	        for (byte val : byteArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Short array: ");
+	        for (short val : shortArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Int array: ");
+	        for (int val : intArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Long array: ");
+	        for (long val : longArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Float array: ");
+	        for (float val : floatArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Double array: ");
+	        for (double val : doubleArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Char array: ");
+	        for (char val : charArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("Boolean array: ");
+	        for (boolean val : boolArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        System.out.print("String array: ");
+	        for (String val : stringArr) System.out.print(val + " ");
+	        System.out.println();
+
+	        sc.close();
+	    }
+	}
+
+
+
