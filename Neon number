@@ -1,0 +1,58 @@
+package com.loop;
+
+import java.util.Scanner;
+
+public class Neonnumber {
+	
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        System.out.print("Enter a number: ");
+	        int num = sc.nextInt();
+
+	        // Square of the number
+	        int square = num * num;
+
+	        // Find sum of digits of square
+	        int sum = 0;
+	        while (square > 0) {
+	            sum += square % 10;
+	            square /= 10;
+	        }
+
+	        if (sum == num) {
+	            System.out.println(num + " is a Neon number.");
+	        } else {
+	            System.out.println(num + " is not a Neon number.");
+	        }
+
+	        sc.close();
+	    }
+	}
+
+//
+
+
+////import java.util.Scanner;
+//
+//public class SunnyNumber {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        System.out.print("Enter a number: ");
+//        int num = sc.2nextInt();
+//
+//        // Check if (num + 1) is a perfect square
+//        int nextNum = num + 1;
+//        double sqrt = Math.sqrt(nextNum);
+//
+//        if (sqrt == (int) sqrt) {
+//            System.out.println(num + " is a Sunny number.");
+//        } else {
+//            System.out.println(num + " is not a Sunny number.");
+//        }
+//
+//        sc.close();
+//    }
+//}
+
