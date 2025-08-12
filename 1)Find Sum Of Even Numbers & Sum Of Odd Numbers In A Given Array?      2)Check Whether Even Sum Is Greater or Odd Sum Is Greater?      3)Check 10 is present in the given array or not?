@@ -1,0 +1,60 @@
+package com.array;
+import java.util.Scanner;
+public class Evenodd {
+	
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        // Take array size
+	        System.out.print("Enter array size: ");
+	        int size = sc.nextInt();
+
+	        int[] arr = new int[size];
+
+	        // Take array input
+	        System.out.println("Enter " + size + " integers:");
+	        for (int i = 0; i < size; i++) {
+	            arr[i] = sc.nextInt();
+	        }
+
+	        int evenSum = 0, oddSum = 0;
+	        boolean isTenPresent = false;
+
+	        // Processing array
+	        for (int num : arr) {
+	            if (num % 2 == 0) {
+	                evenSum += num;
+	            } else {
+	                oddSum += num;
+	            }
+
+	            if (num == 10) {
+	                isTenPresent = true;
+	            }
+	        }
+
+	        // 1) Sum of even and odd numbers
+	        System.out.println("\nSum of Even Numbers: " + evenSum);
+	        System.out.println("Sum of Odd Numbers: " + oddSum);
+
+	        // 2) Check which sum is greater
+	        if (evenSum > oddSum) {
+	            System.out.println("Even Sum is greater.");
+	        } else if (oddSum > evenSum) {
+	            System.out.println("Odd Sum is greater.");
+	        } else {
+	            System.out.println("Both sums are equal.");
+	        }
+
+	        // 3) Check if 10 is present
+	        if (isTenPresent) {
+	            System.out.println("10 is present in the array.");
+	        } else {
+	            System.out.println("10 is not present in the array.");
+	        }
+
+	        sc.close();
+	    }
+	}
+
+}
