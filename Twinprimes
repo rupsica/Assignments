@@ -1,0 +1,37 @@
+package com.loop;
+import java.util.Scanner;
+
+public class Twinprime {
+	
+	    // Method to check if a number is prime
+	    public static boolean isPrime(int num) {
+	        if (num < 2) return false;
+	        for (int i = 2; i <= Math.sqrt(num); i++) {
+	            if (num % i == 0) return false;
+	        }
+	        return true;
+	    }
+
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        System.out.print("Enter lower limit: ");
+	        int lower = sc.nextInt();
+
+	        System.out.print("Enter upper limit: ");
+	        int upper = sc.nextInt();
+
+	        System.out.println("\nTwin Primes between " + lower + " and " + upper + ":");
+
+	        for (int i = lower; i <= upper - 2; i++) {
+	            if (isPrime(i) && isPrime(i + 2)) {
+	                System.out.println("(" + i + ", " + (i + 2) + ")");
+	            }
+	        }
+
+	        sc.close();
+	    }
+	}
+
+
+
